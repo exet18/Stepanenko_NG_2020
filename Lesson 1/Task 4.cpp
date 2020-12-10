@@ -4,26 +4,19 @@ using namespace std;
 
 int main()
 {
-    int a;
+	int salary;
 
-    cout << "Skolko deneg vu polychaete?: ";
-    cin >> a;
+	cout << "Skolko deneg vu polychaete?: ";
+	cin >> salary;
 
-	if (a > 999)
+	if (salary > 999)
 	{
-		if (a > 999999)
-		{
+		if (salary > 999999)
 			cout << "Ti milioner";
-		}
-		if (a < 1000000)
-		{
+		if (salary < 1000000)
 			cout << "Tak derzhat";
-		}
 	}
-	if (a < 1000) 
-	{
+	if (salary < 1000)
 		cout << "Rabotai bolshe";
-	}
-
-    cout << ", no ti molodec!";
+	cout << ", no ti molodec!";
 }
