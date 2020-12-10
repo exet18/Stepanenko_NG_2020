@@ -10,22 +10,17 @@ int main()
 	for (int i = 0; i < 10; i++)
 	{
 		cout << "enter school numbers: ";
-			cin >> num[i];
+		cin >> num[i];
 	}
 	cout << "enter ur school:";
 	cin >> num2;
 	for (int i = 0; i < 10; i++)
 	{
 		if (num[i] == num2)
-		{
 			counter++;
-		}	
 	}
 	if (counter >= 1)
-	{
 		cout << "I know that school: ";
-	}
-	else {
+	else 
 		cout << "I dont know that school: ";
-	}
 }
