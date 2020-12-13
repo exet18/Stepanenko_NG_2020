@@ -3,20 +3,20 @@ using namespace std;
 
 int main()
 {
-	int num[10];
-	int num2;
+	int schools[10];
+	int urschool;
 	int counter = 0;
 
 	for (int i = 0; i < 10; i++)
 	{
 		cout << "enter school numbers: ";
-		cin >> num[i];
+		cin >> schools[i];
 	}
 	cout << "enter ur school:";
-	cin >> num2;
+	cin >> urschool;
 	for (int i = 0; i < 10; i++)
 	{
-		if (num[i] == num2)
+		if (schools[i] == urschool)
 			counter++;
 	}
 	if (counter >= 1)
