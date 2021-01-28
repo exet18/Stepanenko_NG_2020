@@ -5,9 +5,9 @@ using namespace std;
 int main()
 {
   char mysting[100];
-  int lenght = 0;
+  int length = 0;
   int word;
-  int maxlenght = 0;
+  int maxlength = 0;
   int index = 0;
   cout << "Enter your line: ";
   cin.getline(mysting, 100);
@@ -16,29 +16,29 @@ int main()
   {
     if (mysting[index] >= 'a' && mysting[index] <= 'z' || mysting[index] >= 'A' && mysting[index] <= 'Z')
     {
-      lenght++;
+      length++;
     }
     else
     {
-      if (lenght > maxlenght)
+      if (length > maxlength)
       {
-        maxlenght = lenght;
-        word = index - maxlenght;
+        maxlength = length;
+        word = index - maxlength;
       }
-      lenght = 0;
+      length = 0;
     }
     if (mysting[index + 1] == 0)
     {
-      if (lenght > maxlenght)
+      if (length > maxlength)
       {
-        maxlenght = lenght;
-        word = index - maxlenght + 1;
+        maxlength = length;
+        word = index - maxlength + 1;q
       }
     }
     index++;
   }
   cout << "The largest word is: ";
-  for (int i = 0; i < maxlenght; i++)
+  for (int i = 0; i < maxlength; i++)
   {
     cout << mysting[word];
     word++;
