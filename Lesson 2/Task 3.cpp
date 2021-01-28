@@ -1,4 +1,3 @@
-
 #include <iostream>
 
 using namespace std;
@@ -19,19 +18,19 @@ int main()
     arraysize++;
     i++;
   }
-  for (int i = 0; i < arraysize; i++)
+  for (int sorte = 0; sorte < arraysize; sorte++)
   {
     if (numbers[i] > maxValue)
       maxValue = numbers[i];
   }
 
-  for (int i = 0; i < arraysize - 1; i++)
+  for (int freespace_i = 0; freespace_i < arraysize - 1; freespace_i++)
   {
-    for (int j = 0; j < maxValue - numbers[i] / 2; j++)
+    for (int freespace = 0; freespace < maxValue - numbers[i] / 2; freespace++)
     {
       cout << " ";
     }
-    for (int k = 0; k < numbers[i]; k++)
+    for (int stars = 0; stars < numbers[i]; stars++)
     {
       cout << "*";
     }
